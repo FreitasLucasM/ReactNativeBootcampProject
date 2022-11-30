@@ -1,11 +1,11 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, StatusBar } from 'react-native';
+import Routes from './src/Routes';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>eu amo você Amandinha Sá!</Text>
+      
       <StatusBar style="ligth" />
     </View>
   );
@@ -22,6 +22,6 @@ const styles = StyleSheet.create({
   title:{
     backgroundColor: 'gray',
     fontWeight: '900',
-    fontSize: 25,
+    fontSize: 25, 
   }
 });

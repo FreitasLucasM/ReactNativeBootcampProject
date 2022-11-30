@@ -4,10 +4,11 @@ import Routes from './src/Routes';
 
 export default function App() {
   return (
-    <View style={styles.container}>
+    <>
       
       <StatusBar style="ligth" />
-    </View>
+      <Routes/>
+    </>
   );
 }
 

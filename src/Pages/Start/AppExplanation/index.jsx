@@ -2,10 +2,15 @@ import { View, Text, StyleSheet, ScrollView } from 'react-native'
 import React from 'react'
 import DefaultButton from '../../../components/Common/DefaultButton'
 import ExplanationCard from "../../../components/Explanation/ExplanationCard"
+import { useNavigation } from '@react-navigation/native'
+//import { handleNavHome, handleSetShowHome } from 'react-native'
+
+
 export default function AppExplanation() {
 
+    const navigation = useNavigation()
     const handleSetShowHome = ()=>{
-        console.log('botao clicado')
+        navigation.navigate("Home")
 }
   return (
     <View style={styles.container}>

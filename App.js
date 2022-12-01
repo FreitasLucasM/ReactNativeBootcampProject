@@ -6,23 +6,8 @@ export default function App() {
   return (
     <>
       
-      <StatusBar style="ligth" />
+      <StatusBar style="auto" />
       <Routes/>
     </>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fafafa',
-    alignItems: 'center',
-    justifyContent: 'center',
-    paddingHorizontal: 20,
-  },
-  title:{
-    backgroundColor: 'gray',
-    fontWeight: '900',
-    fontSize: 25, 
-  }
-});

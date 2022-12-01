@@ -1,7 +1,7 @@
 import { View, Text, StyleSheet, ScrollView } from 'react-native'
 import React from 'react'
 import DefaultButton from '../../../components/Common/DefaultButton'
-
+import ExplanationCard from "../../../components/Explanation/ExplanationCard"
 export default function AppExplanation() {
 
     const handleSetShowHome = ()=>{
@@ -14,6 +14,7 @@ export default function AppExplanation() {
             <Text style={styles.title}>
                 Antes, deixa {'\n'} eu te explicar...
             </Text>
+            <ExplanationCard/>
             <Text style={styles.descriptionCA}>
                 Pronto(a) pra subir de nivel na vida ?
             </Text>
@@ -31,14 +32,14 @@ export default function AppExplanation() {
     </View>
   )
 }
-const style = StyleSheet.create({
+const styles = StyleSheet.create({
     container:{
         flex:1,
-        backgrounColor: '#212121'
+        backgroundColor: '#212121'
     },
     title:{
         fontSize: 30,
-        fontWeigth: 'bold',
+        fontWeight: 'bold',
         color:'white',
         textAlign:'center',
         marginVertical: 40

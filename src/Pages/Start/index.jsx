@@ -5,8 +5,10 @@ import DefaultButton from '../../components/Common/DefaultButton'
 import { useNavigation } from '@react-navigation/native'
 export default function Start() {
 
+  const navigation = useNavigation()
+
   const handleNavAppExplanation = ()=>{
-    console.log('teste')
+    navigation.navigate("AppExplanation")
   }
 
   return (
